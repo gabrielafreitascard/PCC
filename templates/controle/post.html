@@ -1,0 +1,18 @@
+{% extends 'controle/dashboard.html' %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+
+<div class="app-card app-card-account align-items-start col-lg-6">
+    <form  action="" method="post" enctype="multipart/form-data">
+        
+        {% csrf_token %}
+
+        {{ form|crispy }}
+        
+        <input type="submit" class="btn btn-success" value="Upload">
+    </form>
+</div>
+{% endblock %}

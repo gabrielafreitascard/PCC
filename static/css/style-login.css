@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.main{
+    /* width: 100vw;
+    height: 100vw; */
+    color: #0F6466;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+h1{
+    padding-top: 50px;
+    color: #48b4e0;
+    text-align: center;
+}
+
+.esquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    align-content: center;  
+}
+
+.esquerda img{
+    margin-top: 5rem;
+    width: 80%;
+    border-radius: 20px;
+}
+
+.esquerda h1{
+    margin-top: 2rem;
+    display: flex;
+}
+
+.usuario,.senha{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.usuario input,.senha input{
+    height: 25px;
+}
+
+.login h1{
+    color:#fff;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.card{
+    margin-top: 75px;
+    width: 60%;
+    background-color: #48b4e0  ;
+    padding: 50px;
+    border-radius: 10PX;
+    border: solid 1px black;
+}
+
+button{
+    /* margin-left: 18px; */
+    padding: 10px 15px;
+    background-color: #0F6466;
+    color: #fff ;
+    border-radius: 5px;
+    border: none;
+    
+}
+label{
+    color: #fff;
+    
+}
+button:hover{
+    background-color: #fff;
+    color: #48b4e0;
+}
+
+.btn{
+    display: flex;
+    margin-bottom: 15px;
+
+}
+
+btn3{
+    display: flex;
+    margin-top: 15px;
+
+}
+.btn1{
+    display: flex;
+
+}
+
+.cadastro{
+    background-color: green;
+}
+
+.cadastro:hover{
+    background-color: #fff;
+    color: green;
+}
+
+.form-cadastro{
+    margin-bottom:500px ;
+}
+
+.container{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    align-content: center;  
+}
+.card-cadastro{
+    background-color: #48b4e0  ;
+    padding: 50px;
+    border-radius: 10PX;
+    border: solid 1px black;
+    width: 60%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+form label{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.form-login{
+
+    margin: 0;
+	
+}
+.cadastrar{
+    margin-top: 15px;
+    background-color: green;
+    padding: 10px 15px;
+    color: #fff ;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.logar{
+    margin-top: 15px;
+    background-color: blue; 
+    padding: 10px 15px;
+    color: #fff ;
+    border-radius: 5px;
+    border: none;
+}
+
+.logar:hover{
+    margin-top: 15px;
+    background-color: white; 
+    padding: 10px 15px;
+    color: #48b4e0 ;
+    border-radius: 5px;
+    border: none;
+}

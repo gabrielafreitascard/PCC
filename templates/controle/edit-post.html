@@ -1,0 +1,36 @@
+{% extends 'controle/dashboard.html' %}
+
+{% block content %}
+
+<div class="basic-form">
+<form action="" method="POST">{% csrf_token %}
+    
+    <div class="form-group">
+        <label style = "
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: stretch;">
+        <h3>Título</h3>
+        <input type="text" id="name" name="titulo" required value="{{ data.titulo }}">
+    </label>
+</div>
+    <div class="form-group">
+    <label style = "
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;">
+        <h3>Conteúdo</h3>
+        <textarea rows="10" cols="100" type="text" id="" name="conteudo" required value="{{ data.conteudo }}"></textarea>
+    </label>
+</div>
+        <input type="submit" value="Cadastrar" id="button">
+    </div>
+    
+    
+</form>
+
+</div>
+
+{% endblock  %}

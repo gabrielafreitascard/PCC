@@ -1,0 +1,103 @@
+{%load  static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>BLOG DA ACESSIBILIDADE</title>
+		<link rel="stylesheet" href="{% static 'css/grid.css'%}">
+		<link rel="stylesheet" href="{% static 'css/style.css'%}">
+	</head>
+	<body>
+
+		<header class="header">
+				<a  href="/user" class="button">
+				Usuários
+				</a> 
+				<a  href="/post" class="button">
+					Novo Post
+				</a> 
+				<a href="/post/view" class="button">
+					Vizualizar Post
+				</a> 
+					
+		</header>	
+
+		<section class="alfebetizacao">
+			<div class="container">
+				<h1>alfabetização </h1>
+				
+				<blockquote class="quote-externo">
+					<p>Brincadeiras para alfabetização de crianças</p>
+				</blockquote>
+				<a href = "/home/alfabetizacao" class="btn">Ver brincadeira</a>
+				<p>Ver uma imagem com uma criança loira colando postite rosa e verde na parede.</p>
+			</div>
+		</section>
+
+		<section class="motora">
+			<div class="container">
+				<h1>Coordenação Motora </h1>
+				
+				<blockquote class="quote-externo">
+					<p>Brincadeiras para coordenação motora de crianças</p>
+				</blockquote>
+				<a href = "/home/coordenacao" class="btn">Ver brincadeira</a>
+				<p>Ver uma imagem com três crianças bricando com peças avulsas.</p>
+			</div>
+		</section>
+
+		<section class="sensorial">
+			<div class="container">
+				<h1>Sensorial </h1>
+				
+				<blockquote class="quote-externo">
+					<p>Brincadeiras para atividade sensorial de crianças</p>
+				</blockquote>
+				<a href = "/home/sensorial" class="btn">Ver brincadeira</a>
+				<p>Ver uma imagem com as mãos de criança dentro de uma bacia com pingos de tintas vermelhas, verdes e azuis.</p>
+			</div>
+		</section>
+
+		
+
+		<footer>
+			<div class="footer">
+				<div class="container">
+
+					<div class="grid-8 footer_historia">
+						<h3>BLOG DA ACESSIBILIDADE</h3>
+						<p>Aqui encontrarão o apoio necessário no processo educativo para crianças
+							portadoras de  NNE- Necessidades Educativas Especiais.</p>
+					</div>
+
+					<div class="grid-4 footer_contato">
+						<h3>Contato</h3>
+						<ul>
+							<li>- 38 9197-6639</li>
+							<li>- projetoacessibilidade@gmail.com</li>
+							<li>- Guanambi - Bahia</li>
+						</ul>
+					</div>
+
+					<div class="grid-4 footer_redes">
+						<h3>Contato</h3>
+						<ul>
+							<li><a href="http://facebook.com" target="_blank"><img src="{% static 'img/redes-sociais/facebook-logo.png'%}"></a></li>                                                
+							<li><a href="http://instagram.com" target="_blank"><img src="{% static 'img/redes-sociais/instagram.png'%}"></a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			<div vw class="enabled">
+				<div vw-access-button class="active"></div>
+				<div vw-plugin-wrapper>
+				  <div class="vw-plugin-top-wrapper"></div>
+				</div>
+			  </div>
+			  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+			  <script>
+				new window.VLibras.Widget('https://vlibras.gov.br/app');
+			  </script>
+			

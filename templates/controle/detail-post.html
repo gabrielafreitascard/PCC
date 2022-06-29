@@ -1,0 +1,18 @@
+{% extends 'controle/dashboard.html' %}
+
+{% block content %}
+    <h3>Nome</h3>
+    <p>{{ data.titulo }}</p>
+
+    <h3>Conteúdo</h3>
+    <p>{{ data.conteudo }}</p>
+
+    <h3>Data de Publicação</h3>
+    <p>{{data.data_publicacao}}</p>
+    <a class="excluir" href="{{data.id}}/delete"><button type="button" class="btn btn-danger">Excluir</button></a>
+    <br>
+    
+    
+    
+    
+{% endblock  %}

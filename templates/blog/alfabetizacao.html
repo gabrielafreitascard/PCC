@@ -1,0 +1,89 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+	
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="{% static 'css1/style.css' %}">
+
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-12 text-center mb-11">
+					<h2 class="heading-section"></h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-11 col-lg-12">
+
+					<div class="login-wrap p-4 p-md-5">
+
+						{% for post in posts %}
+						{% if post.titulo == 'Atividade com alfabeto Braille' %}
+						<h1 class="text-center mb-4">{{post.titulo}}</h1>
+		      			<p>{{post.conteudo}}</p>
+				  
+				<img src="{{post.image.url}}" alt="">
+				<br>
+				<br>
+						{% endif %}
+						{% endfor %}
+				<div class="flex-box-artigo">
+					<div>
+						<h3>Materiais:</h3>
+							<ul>
+								<li>Tesoura:</li>
+								<li> Revistas, livros ou jornais;</li>
+								<li>Milho;</li>
+								<li>Cola;</li>
+								<li>Caneta;</li>
+								<li>Papel</li>
+							</ul>
+					</div>
+					<div>
+						<h3>Modo de realização:</h3>
+							<ol>
+								<li>Recorte a imagem deseja.</li>
+								<li>Cole a imagem recortada em um papel e escreva o 
+									nome do desenho, como no exemplo da imagem 2.
+									</li>
+								<li>Ao lado do desenho escreva a palavra dando espaço 
+									entre as letras, como no exemplo da imagem 3.
+									</li>
+
+								<li>E abaixo das letras, cole os milhos de acordo o 
+									alfabeto Braille.
+										</li>
+								<li>Peça que a criança para adivinhar a palavra escrita.
+										</li>
+							</ol>
+					</div>
+				</div>
+				
+				
+	        </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/popper.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+	
+	</body>
+</html>
+
